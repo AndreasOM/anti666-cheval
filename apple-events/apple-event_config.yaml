@@ -1,0 +1,9 @@
+elements:
+  - name: Background Block
+    type: block
+    parameters:
+      pos_x: 20
+      pos_y: 910
+      width: 1200
+      height: 150
+      color: "gray"
