@@ -2,6 +2,10 @@ variable_defaults:
   title: "Apple Spring Event"
   desc_0: "Just watching the event,"
   desc_1: "and doing some cheval config on the side"
+  color_0: "#f6cd26"
+  color_1: "#ac6b26"
+  color_2: "#563226"
+  color_7: "#393939"
 elements:
   - name: Background Block
     type: block
@@ -10,7 +14,7 @@ elements:
       pos_y: 890
       width: 1200
       height: 170
-      color: "gray"
+      color: "#393939"
   - name: Title Shadow
     type: text
     parameters:
@@ -24,7 +28,7 @@ elements:
       bounding_box_width: 1880
       text: "$title"
       font: ../data/fonts/FiraCode-Medium.ttf
-      color: "0x800000CC"
+      color: "0xff563226"
   - name: Title
     type: text
     parameters:
@@ -38,7 +42,7 @@ elements:
       bounding_box_width: 1880
       text: "$title"
       font: ../data/fonts/FiraCode-Medium.ttf
-      color: "0xff8888FF"
+      color: "0xfff6cd26"
 
   - name: Description
     type: text
@@ -53,7 +57,7 @@ elements:
       bounding_box_width: 1880
       text: "$desc_0"
       font: ../data/fonts/FiraCode-Medium.ttf
-      color: "0xffffffff"
+      color: "0xffac6b26"
   - name: Description
     type: text
     parameters:
@@ -67,4 +71,4 @@ elements:
       bounding_box_width: 1880
       text: "$desc_1"
       font: ../data/fonts/FiraCode-Medium.ttf
-      color: "0xffffffff"
+      color: "0xffac6b26"
