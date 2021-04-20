@@ -6,6 +6,11 @@ variable_defaults:
   color_1: "#ac6b26"
   color_2: "#563226"
   color_7: "#393939"
+  sbs: 64
+  sbp: 8
+  sbx: 1632
+  sby: 8
+
 elements:
   - name: Fill Block
     type: block
@@ -16,6 +21,45 @@ elements:
       width: 1920
       height: 1080
       color: "white"
+
+  - name: Silly Block 00
+    type: block
+    parameters:
+      pos_x: "$sbx + 0*($sbs+$sbp)"
+      pos_y: "$sby + 0*($sbs+$sbp)"
+      width: "$sbs"
+      height: "$sbs"
+      color: "#f6cd26"
+      alpha: "0.5+0.5*sin(6.28*$time)"
+  - name: Silly Block 10
+    type: block
+    parameters:
+      pos_x: "$sbx + 1*($sbs+$sbp)"
+      pos_y: "$sby + 0*($sbs+$sbp)"
+      width: "$sbs"
+      height: "$sbs"
+      color: "#f6cd26"
+      alpha: "0.5+0.5*sin(0.5*6.28*$time)"
+  - name: Silly Block 20
+    type: block
+    parameters:
+      pos_x: "$sbx + 2*($sbs+$sbp)"
+      pos_y: "$sby + 0*($sbs+$sbp)"
+      width: "$sbs"
+      height: "$sbs"
+      color: "#f6cd26"
+      alpha: "0.5+0.5*sin(0.25*6.28*$time)"
+  - name: Silly Block 30
+    type: block
+    parameters:
+      pos_x: "$sbx + 3*($sbs+$sbp)"
+      pos_y: "$sby + 0*($sbs+$sbp)"
+      width: "$sbs"
+      height: "$sbs"
+      color: "#f6cd26"
+      alpha: "0.5+0.5*sin(0.125*6.28*$time)"
+
+
   - name: Background Block
     type: block
     parameters:
