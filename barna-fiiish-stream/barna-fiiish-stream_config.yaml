@@ -1,0 +1,241 @@
+default_page: 0
+
+variable_defaults:
+  title: "Fiiish RS!!!"
+  desc_0: "- generic audio system"
+  desc_1: ""
+  color_0: "#f6cd26"
+  color_1: "#ac6b26"
+  color_2: "#563226"
+  color_7: "#393939"
+  sbs: 64
+  sbp: 8
+  sbx: 1344
+  sby: 8
+
+elements:
+  - name: Fill Block
+    type: block
+    disabled: false
+    parameters:
+      pos_x: 0
+      pos_y: 0
+      width: 1920
+      height: 1080
+      color: "#ff00bb"
+
+  - name: Silly Block 00
+    type: block
+    parameters:
+      pos_x: "$sbx + 0*($sbs+$sbp)"
+      pos_y: "$sby + 0*($sbs+$sbp)"
+      width: "$sbs"
+      height: "$sbs"
+      color: "#f6cd26"
+      alpha: "0.5+0.5*sin(6.28*$time)"
+  - name: Silly Block 10
+    type: block
+    parameters:
+      pos_x: "$sbx + 1*($sbs+$sbp)"
+      pos_y: "$sby + 0*($sbs+$sbp)"
+      width: "$sbs"
+      height: "$sbs"
+      color: "#f6cd26"
+      alpha: "0.5+0.5*sin(0.5*6.28*$time)"
+  - name: Silly Block 20
+    type: block
+    parameters:
+      pos_x: "$sbx + 2*($sbs+$sbp)"
+      pos_y: "$sby + 0*($sbs+$sbp)"
+      width: "$sbs"
+      height: "$sbs"
+      color: "#f6cd26"
+      alpha: "0.5+0.5*sin(0.25*6.28*$time)"
+  - name: Silly Block 30
+    type: block
+    parameters:
+      pos_x: "$sbx + 3*($sbs+$sbp)"
+      pos_y: "$sby + 0*($sbs+$sbp)"
+      width: "$sbs"
+      height: "$sbs"
+      color: "#f6cd26"
+      alpha: "0.5+0.5*sin(0.125*6.28*$time)"
+  - name: Silly Block 40
+    type: block
+    parameters:
+      pos_x: "$sbx + 4*($sbs+$sbp)"
+      pos_y: "$sby + 0*($sbs+$sbp)"
+      width: "$sbs"
+      height: "$sbs"
+      color: "#f6cd26"
+      alpha: "0.5+0.5*sin(0.5*0.125*6.28*$time)"
+  - name: Silly Block 50
+    type: block
+    parameters:
+      pos_x: "$sbx + 5*($sbs+$sbp)"
+      pos_y: "$sby + 0*($sbs+$sbp)"
+      width: "$sbs"
+      height: "$sbs"
+      color: "#f6cd26"
+      alpha: "0.5+0.5*sin(0.25*0.125*6.28*$time)"
+  - name: Silly Block 60
+    type: block
+    parameters:
+      pos_x: "$sbx + 6*($sbs+$sbp)"
+      pos_y: "$sby + 0*($sbs+$sbp)"
+      width: "$sbs"
+      height: "$sbs"
+      color: "#f6cd26"
+      alpha: "0.5+0.5*sin(0.125*0.125*6.28*$time)"
+  - name: Silly Block 70
+    type: block
+    parameters:
+      pos_x: "$sbx + 7*($sbs+$sbp)"
+      pos_y: "$sby + 0*($sbs+$sbp)"
+      width: "$sbs"
+      height: "$sbs"
+      color: "#f6cd26"
+      alpha: "0.5+0.5*sin(0.5*0.125*0.125*6.28*$time)"
+
+
+  - name: Background Block
+    type: block
+    parameters:
+      pos_x: 20
+      pos_y: 890
+      width: 1200
+      height: 170
+      color: "#393939"
+  - name: Background Image
+    type: image
+    disabled: true
+    parameters:
+      pos_x: 0
+      pos_y: 870
+      filename: title_frame.png
+
+  - name: Title Shadow
+    type: text
+    parameters:
+      pos_x: 35
+      pos_y: 875
+      width: 960
+      height: 120
+      size: 90
+      bounding_box_pos_x: 20
+      bounding_box_pos_y: 870
+      bounding_box_width: 1880
+      text: "$title"
+      font: ../data/fonts/FiraCode-Medium.ttf
+      color: "0xff563226"
+  - name: Title
+    type: text
+    parameters:
+      pos_x: 30
+      pos_y: 870
+      width: 960
+      height: 120
+      size: 90
+      bounding_box_pos_x: 20
+      bounding_box_pos_y: 870
+      bounding_box_width: 1880
+      text: "$title"
+      font: ../data/fonts/FiraCode-Medium.ttf
+      color: "0xfff6cd26"
+
+  - name: Description Shadow
+    type: text
+    parameters:
+      pos_x: 32
+      pos_y: 972
+      width: 960
+      height: 120
+      size: 40
+      bounding_box_pos_x: 20
+#      bounding_box_pos_y: 870
+      bounding_box_width: 1880
+      text: "$desc_0"
+      font: ../data/fonts/FiraCode-Medium.ttf
+      color: "0xff222222"
+  - name: Description Shadow
+    type: text
+    parameters:
+      pos_x: 32
+      pos_y: 1012
+      width: 960
+      height: 120
+      size: 40
+      bounding_box_pos_x: 20
+#      bounding_box_pos_y: 870
+      bounding_box_width: 1880
+      text: "$desc_1"
+      font: ../data/fonts/FiraCode-Medium.ttf
+      color: "0xff222222"
+
+  - name: Description
+    type: text
+    parameters:
+      pos_x: 30
+      pos_y: 970
+      width: 960
+      height: 120
+      size: 40
+      bounding_box_pos_x: 20
+#      bounding_box_pos_y: 870
+      bounding_box_width: 1880
+      text: "$desc_0"
+      font: ../data/fonts/FiraCode-Medium.ttf
+      color: "0xffffffff"
+  - name: Description
+    type: text
+    parameters:
+      pos_x: 30
+      pos_y: 1010
+      width: 960
+      height: 120
+      size: 40
+      bounding_box_pos_x: 20
+#      bounding_box_pos_y: 870
+      bounding_box_width: 1880
+      text: "$desc_1"
+      font: ../data/fonts/FiraCode-Medium.ttf
+      color: "0xffffffff"
+
+
+pages:
+  - name: Page 0
+    elements:
+    - name: Page 0 Stripe
+      type: block
+      disabled: true
+      parameters:
+        pos_x: 0
+        pos_y: 490
+        width: 1980
+        height: 100
+        color: 0xff202080
+
+  - name: Page 1
+    elements:
+    - name: Page 1 Stripe
+      type: block
+      parameters:
+        pos_x: 0
+        pos_y: 490
+        width: 1980
+        height: 100
+        color: 0xff202080
+    - name: Page 1 Text
+      type: text
+      parameters:
+        pos_x: 20
+        pos_y: 490
+        width: 1980
+        height: 100
+        size: 80
+        bounding_box_pos_x: 20
+        bounding_box_pos_y: 490
+        bounding_box_width: 1980
+        text: "\"Soon...\""
+        font: ../data/fonts/FiraCode-Medium.ttf
+        color: "0xffffffff"
