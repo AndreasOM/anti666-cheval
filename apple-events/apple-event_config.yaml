@@ -1,7 +1,7 @@
 variable_defaults:
-  title: "Apple Spring Event"
+  title: "Apple October Event"
   desc_0: "Just watching the event,"
-  desc_1: "and doing some cheval config on the side"
+  desc_1: "and doing some talking on the side"
   color_0: "#f6cd26"
   color_1: "#ac6b26"
   color_2: "#563226"
