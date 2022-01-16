@@ -1,8 +1,8 @@
 default_page: 0
 
 variable_defaults:
-  title: "Fiiish RS!!!"
-  desc_0: "- oml-audio: something with audio"
+  title: "Cheval"
+  desc_0: "- sound support"
   desc_1: ""
   color_0: "#fff6cd26"
   color_1: "#ffac6b26"
@@ -143,9 +143,10 @@ elements:
     parameters:
       variable: "timer"
       text_variable: "timer_text"
-      hide_on_zero: $timer_hidden
+#      hide_on_zero: $timer_hidden
       sound_on_zero: TIMER_EXPIRED
-
+      initial_value: 10
+      repeat: true
 
   - name: Timer Background Block
     type: block
