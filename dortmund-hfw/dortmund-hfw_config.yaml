@@ -1,12 +1,9 @@
 default_page: 0
 
 variable_defaults:
-        #  title: "Fiiish RS!!!"
-  title: "Bits'n'Pieces'n'Stuff"
-        # title: "Atem & Rust"
-  #  desc_0: "- oml-audio: something with audio"
-  desc_0: "- streamdeck hack merge"
-  desc_1: "- streamdeck dual view"
+  title: "Let's play!"
+  desc_0: "- Testing: COD Vanguard Zombies"
+  desc_1: "- Looks like my camera broke :("
   color_0: "#fff6cd26"
   color_1: "#ffac6b26"
   color_2: "#ff563226"
@@ -228,5 +225,45 @@ pages:
         bounding_box_pos_y: 390
         bounding_box_width: 1980
         text: "\"Soon...\""
+        font: ../data/fonts/FiraCode-Medium.ttf
+        color: "0xffffffff"
+
+  - name: Page 2
+    elements:
+    - name: Page 2 Stripe
+      type: block
+      parameters:
+        pos_x: 0
+        pos_y: "390-140"
+        width: 1980
+        height: "300+280"
+        color: 0xff202080
+    - name: Page 2 Text
+      type: text
+      parameters:
+        pos_x: 20
+        pos_y: "370+10*sin(3*$time)-140"
+        width: 1980
+        height: 300
+        size: 280
+        bounding_box_pos_x: 20
+        bounding_box_pos_y: "390-140+50"
+        bounding_box_width: 1980
+        text: "\"Taking a\""
+        font: ../data/fonts/FiraCode-Medium.ttf
+        color: "0xffffffff"
+
+    - name: Page 2 Text b
+      type: text
+      parameters:
+        pos_x: 20
+        pos_y: "370+10*sin(3*$time)+140"
+        width: 1980
+        height: 300
+        size: 280
+        bounding_box_pos_x: 20
+        bounding_box_pos_y: "390+140"
+        bounding_box_width: 1980
+        text: "\"little break!\""
         font: ../data/fonts/FiraCode-Medium.ttf
         color: "0xffffffff"
