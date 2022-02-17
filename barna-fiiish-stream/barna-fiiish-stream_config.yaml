@@ -1,9 +1,12 @@
 default_page: 0
 
 variable_defaults:
-  title: "Fiiish RS!!!"
-  desc_0: "- oml-audio: something with audio"
-  desc_1: ""
+        #  title: "Fiiish RS!!!"
+        # title: "Bits'n'Pieces'n'Stuff"
+  title: "Atem & Rust"
+  #  desc_0: "- oml-audio: something with audio"
+  desc_0: "- rendering performance"
+  desc_1: "- Bonus: *actual* ATEM work"
   color_0: "#fff6cd26"
   color_1: "#ffac6b26"
   color_2: "#ff563226"
@@ -30,7 +33,8 @@ elements:
       pos_y: 0
       width: 1920
       height: 1080
-      color: "#ff00bb"
+#      color: "#ff00bb"
+      color: "#000000"
 
 
   - name: Background Block
@@ -38,7 +42,7 @@ elements:
     parameters:
       pos_x: 20
       pos_y: 890
-      width: 1200
+      width: 1000
       height: 170
       color: "#393939"
 
@@ -140,6 +144,7 @@ elements:
 
   - name: Timer
     type: timer
+    disabled: true
     parameters:
       variable: "timer"
       text_variable: "timer_text"
@@ -149,6 +154,7 @@ elements:
 
   - name: Timer Background Block
     type: block
+    disabled: true
     parameters:
       pos_x: 1670
       pos_y: 10
@@ -158,6 +164,7 @@ elements:
 
   - name: TimerTitleText
     type: text
+    disabled: true
     parameters:
       pos_x: 1710
       pos_y: 10
@@ -172,6 +179,7 @@ elements:
 
   - name: TimerText
     type: text
+    disabled: true
     hidden: true
     parameters:
       pos_x: 1570
@@ -212,7 +220,7 @@ pages:
       type: text
       parameters:
         pos_x: 20
-        pos_y: 390
+        pos_y: "370+10*sin(3*$time)"
         width: 1980
         height: 300
         size: 280
