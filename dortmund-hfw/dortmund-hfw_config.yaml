@@ -2,7 +2,7 @@ default_page: 0
 
 variable_defaults:
   title: "Let's play!"
-  desc_0: "- Testing: COD Vanguard Zombies"
+  desc_0: "- Horizon Forbidden West"
   desc_1: "- Looks like my camera broke :("
   color_0: "#fff6cd26"
   color_1: "#ffac6b26"
