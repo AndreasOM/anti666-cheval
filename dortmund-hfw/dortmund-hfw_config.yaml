@@ -190,6 +190,15 @@ elements:
       font: ../data/fonts/FiraCode-Medium.ttf
       color: "0xffffffff"
 
+  - name: Bug anti666 Image
+    type: image
+    disabled: false
+    parameters:
+      pos_x: 0
+      pos_y: 0
+      filename: ../data/bugs/anti666tv-round-150.png
+
+
 pages:
   - name: Page 0
     elements:
@@ -203,7 +212,7 @@ pages:
         height: 100
         color: 0xff202080
 
-  - name: Page 1
+  - name: Page Soon
     elements:
     - name: Page 1 Stripe
       type: block
@@ -228,7 +237,7 @@ pages:
         font: ../data/fonts/FiraCode-Medium.ttf
         color: "0xffffffff"
 
-  - name: Page 2
+  - name: Page BRB
     elements:
     - name: Page 2 Stripe
       type: block
