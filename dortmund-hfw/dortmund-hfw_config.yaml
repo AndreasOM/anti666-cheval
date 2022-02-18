@@ -15,9 +15,9 @@ variable_defaults:
   sby: 8
   bug_pos_x: 0
   bug_pos_y: 80
-  box_posx: 710
-  box_posy: 980
-  box_width: 500
+  box_posx: 660
+  box_posy: 1020
+  box_width: 600
   box_padding: 8
   box_text_size: 90
   timer_title: ""
@@ -92,8 +92,8 @@ elements:
   - name: Description Shadow
     type: text
     parameters:
-      pos_x: "$box_posx+$box_padding"
-      pos_y: "$box_posy+$box_text_size*0.6+2"
+      pos_x: "$box_posx+$box_padding+200"
+      pos_y: "$box_posy+2+10"
       width: 960
       height: 120
       size: 32
@@ -107,8 +107,8 @@ elements:
   - name: Description
     type: text
     parameters:
-      pos_x: "$box_posx+$box_padding"
-      pos_y: "$box_posy+$box_text_size*0.6+0"
+      pos_x: "$box_posx+$box_padding+200"
+      pos_y: "$box_posy+0+10"
       width: 960
       height: 120
       size: 32
