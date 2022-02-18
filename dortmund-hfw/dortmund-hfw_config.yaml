@@ -2,8 +2,9 @@ default_page: 0
 
 variable_defaults:
   title: "Let's play!"
-  desc_0: "- Horizon Forbidden West"
-  desc_1: "- Looks like my camera broke :("
+  desc_0: "  Horizon Forbidden West"
+#  desc_1: "- Looks like my camera broke :("
+  desc_1: ""
   color_0: "#fff6cd26"
   color_1: "#ffac6b26"
   color_2: "#ff563226"
@@ -12,6 +13,9 @@ variable_defaults:
   sbp: 8
   sbx: 1344
   sby: 8
+  box_posx: 460
+  box_width: 1000
+  box_padding: 8
   timer_title: ""
   timer: 0
   timer_hidden: true
@@ -37,9 +41,9 @@ elements:
   - name: Background Block
     type: block
     parameters:
-      pos_x: 20
+      pos_x: "$box_posx"
       pos_y: 890
-      width: 1000
+      width: "$box_width"
       height: 170
       color: "#393939"
 
@@ -54,7 +58,8 @@ elements:
   - name: Title Shadow
     type: text
     parameters:
-      pos_x: 35
+      pos_x: "$box_posx+$box_padding"
+#      pos_x: 35
       pos_y: 875
       width: 960
       height: 120
@@ -68,7 +73,7 @@ elements:
   - name: Title
     type: text
     parameters:
-      pos_x: 30
+      pos_x: "$box_posx+$box_padding"
       pos_y: 870
       width: 960
       height: 120
@@ -83,58 +88,30 @@ elements:
   - name: Description Shadow
     type: text
     parameters:
-      pos_x: 32
+      pos_x: "$box_posx+$box_padding"
       pos_y: 972
       width: 960
       height: 120
-      size: 40
+      size: 80
       bounding_box_pos_x: 20
 #      bounding_box_pos_y: 870
       bounding_box_width: 1880
       text: "$desc_0"
-      font: ../data/fonts/FiraCode-Medium.ttf
-      color: "0xff222222"
-  - name: Description Shadow
-    type: text
-    parameters:
-      pos_x: 32
-      pos_y: 1012
-      width: 960
-      height: 120
-      size: 40
-      bounding_box_pos_x: 20
-#      bounding_box_pos_y: 870
-      bounding_box_width: 1880
-      text: "$desc_1"
       font: ../data/fonts/FiraCode-Medium.ttf
       color: "0xff222222"
 
   - name: Description
     type: text
     parameters:
-      pos_x: 30
+      pos_x: "$box_posx+$box_padding"
       pos_y: 970
       width: 960
       height: 120
-      size: 40
+      size: 80
       bounding_box_pos_x: 20
 #      bounding_box_pos_y: 870
       bounding_box_width: 1880
       text: "$desc_0"
-      font: ../data/fonts/FiraCode-Medium.ttf
-      color: "0xffffffff"
-  - name: Description
-    type: text
-    parameters:
-      pos_x: 30
-      pos_y: 1010
-      width: 960
-      height: 120
-      size: 40
-      bounding_box_pos_x: 20
-#      bounding_box_pos_y: 870
-      bounding_box_width: 1880
-      text: "$desc_1"
       font: ../data/fonts/FiraCode-Medium.ttf
       color: "0xffffffff"
 
