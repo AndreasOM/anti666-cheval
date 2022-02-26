@@ -1,5 +1,7 @@
 default_page: 0
 
+variable_filename: variables.yaml
+
 variable_defaults:
   title: "Let's play!"
   desc_0: "  Horizon Forbidden West"
@@ -16,13 +18,16 @@ variable_defaults:
   bug_pos_x: 0
   bug_pos_y: 80
   box_posx: 660
-  box_posy: 1020
+  box_posy: 820
   box_width: 600
   box_padding: 8
   box_text_size: 90
   timer_title: ""
   timer: 0
   timer_hidden: true
+  title_shadow_offset: 0
+  title_glow_size: 3
+  description_shadow_offset: 2
 
 elements:
   - name: Soundbank
@@ -59,21 +64,6 @@ elements:
       pos_y: 870
       filename: title_frame.png
 
-  - name: Title Shadow
-    type: text
-    parameters:
-      pos_x: "$box_posx+$box_padding"
-#      pos_x: 35
-      pos_y: "$box_posy+2"
-      width: 960
-      height: 120
-      size: 40
-#      bounding_box_pos_x: 20
-#      bounding_box_pos_y: 870
-#      bounding_box_width: 1880
-      text: "$title"
-      font: ../data/fonts/FiraCode-Medium.ttf
-      color: "0xff563226"
   - name: Title
     type: text
     parameters:
@@ -88,21 +78,11 @@ elements:
       text: "$title"
       font: ../data/fonts/FiraCode-Medium.ttf
       color: "0xfff6cd26"
-
-  - name: Description Shadow
-    type: text
-    parameters:
-      pos_x: "$box_posx+$box_padding+200"
-      pos_y: "$box_posy+2+10"
-      width: 960
-      height: 120
-      size: 32
-#      bounding_box_pos_x: 20
-#      bounding_box_pos_y: 870
-#      bounding_box_width: 1880
-      text: "$desc_0"
-      font: ../data/fonts/FiraCode-Medium.ttf
-      color: "0xff222222"
+      shadow_color: "0xfff63226"
+      shadow_offset_x: "$title_shadow_offset"
+      shadow_offset_y: "$title_shadow_offset"
+      glow_color: "0xff363286"
+      glow_size: "$title_glow_size"
 
   - name: Description
     type: text
@@ -118,6 +98,9 @@ elements:
       text: "$desc_0"
       font: ../data/fonts/FiraCode-Medium.ttf
       color: "0xffffffff"
+      shadow_color: "0xff222222"
+      shadow_offset_x: "$description_shadow_offset"
+      shadow_offset_y: "$description_shadow_offset"
 
 
   - name: Timer
