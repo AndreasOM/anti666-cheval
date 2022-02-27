@@ -17,8 +17,8 @@ variable_defaults:
   sby: 8
   bug_pos_x: 0
   bug_pos_y: 80
-  box_posx: 660
-  box_posy: 820
+  box_pos_x: 660
+  box_pos_y: 1020
   box_width: 600
   box_padding: 8
   box_text_size: 90
@@ -50,8 +50,8 @@ elements:
   - name: Background Block
     type: block
     parameters:
-      pos_x: "$box_posx"
-      pos_y: "$box_posy"
+      pos_x: "$box_pos_x"
+      pos_y: "$box_pos_y"
       width: "$box_width"
       height: 170
       color: "#393939"
@@ -67,8 +67,8 @@ elements:
   - name: Title
     type: text
     parameters:
-      pos_x: "$box_posx+$box_padding"
-      pos_y: "$box_posy+0"
+      pos_x: "$box_pos_x+$box_padding"
+      pos_y: "$box_pos_y+0"
       width: 960
       height: 120
       size: 40
@@ -87,8 +87,8 @@ elements:
   - name: Description
     type: text
     parameters:
-      pos_x: "$box_posx+$box_padding+200"
-      pos_y: "$box_posy+0+10"
+      pos_x: "$box_pos_x+$box_padding+200"
+      pos_y: "$box_pos_y+0+10"
       width: 960
       height: 120
       size: 32
