@@ -29,6 +29,11 @@ variable_defaults:
   title_glow_size: 3
   description_shadow_offset: 2
 
+  schedule_pos_x: 1440
+  schedule_pos_y: 80
+  schedule_font_size: 60
+  schedule_line_skip: 40
+
 elements:
   - name: Soundbank
     type: soundbank
@@ -200,6 +205,8 @@ pages:
         text: "\"Soon...\""
         font: ../data/fonts/FiraCode-Medium.ttf
         color: "0xffffffff"
+        glow_color: "0xff000000"
+        glow_size: 2
 
   - name: Page BRB
     elements:
@@ -240,3 +247,53 @@ pages:
         text: "\"little break!\""
         font: ../data/fonts/FiraCode-Medium.ttf
         color: "0xffffffff"
+
+  - name: Schedule
+    elements:
+      - name: Schedule Title
+        type: text
+        parameters:
+          pos_x: "$schedule_pos_x"
+          pos_y: "$schedule_pos_y+0*$schedule_line_skip"
+          width: 480
+          height: 540
+          size: "$schedule_font_size" 
+          text: "\"Today\""
+          font: ../data/fonts/FiraCode-Medium.ttf
+          color: "0xffffffff"
+
+      - name: Schedule 1 
+        type: text
+        parameters:
+          pos_x: "$schedule_pos_x"
+          pos_y: "$schedule_pos_y+1*$schedule_line_skip"
+          width: 480
+          height: 540
+          size: "$schedule_font_size" 
+          text: "\"  2-3h HFW\""
+          font: ../data/fonts/FiraCode-Medium.ttf
+          color: "0xffffffff"
+
+      - name: Schedule 2 
+        type: text
+        parameters:
+          pos_x: "$schedule_pos_x"
+          pos_y: "$schedule_pos_y+2*$schedule_line_skip"
+          width: 480
+          height: 540
+          size: "$schedule_font_size" 
+          text: "\"  2-3h Lunch & Break\""
+          font: ../data/fonts/FiraCode-Medium.ttf
+          color: "0xffffffff"
+
+      - name: Schedule 3 
+        type: text
+        parameters:
+          pos_x: "$schedule_pos_x"
+          pos_y: "$schedule_pos_y+3*$schedule_line_skip"
+          width: 480
+          height: 540
+          size: "$schedule_font_size" 
+          text: "\"  4-5h HFW\""
+          font: ../data/fonts/FiraCode-Medium.ttf
+          color: "0xffffffff"
