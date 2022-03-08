@@ -258,7 +258,7 @@ pages:
           width: 480
           height: 540
           size: "$schedule_font_size" 
-          text: "\"Today\""
+          text: "text_lines_from_file(0,1,\"schedule.txt\")"
           font: ../data/fonts/FiraCode-Medium.ttf
           color: "0xffffffff"
 
@@ -270,12 +270,13 @@ pages:
           width: 480
           height: 540
           size: "$schedule_font_size" 
-          text: "\"  2-3h HFW\""
+          text: "text_lines_from_file(1,0,\"schedule.txt\")"
           font: ../data/fonts/FiraCode-Medium.ttf
           color: "0xffffffff"
 
       - name: Schedule 2 
         type: text
+        disabled: true
         parameters:
           pos_x: "$schedule_pos_x"
           pos_y: "$schedule_pos_y+2*$schedule_line_skip"
@@ -288,6 +289,7 @@ pages:
 
       - name: Schedule 3 
         type: text
+        disabled: true
         parameters:
           pos_x: "$schedule_pos_x"
           pos_y: "$schedule_pos_y+3*$schedule_line_skip"

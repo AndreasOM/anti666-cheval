@@ -1,3 +1,3 @@
 Cheval
-- file reload
-- multiline text
+- [x] file reload
+- [x] multiline text

@@ -61,6 +61,7 @@ elements:
       bounding_box_pos_x: 20
       bounding_box_pos_y: 870
       bounding_box_width: 1880
+      bounding_box_height: 240
       text: "text_lines_from_file(0,1,\"title_desc.txt\")"
       font: ../data/fonts/FiraCode-Medium.ttf
       color: "0xfff6cd26"
@@ -78,7 +79,7 @@ elements:
       bounding_box_pos_x: 20
 #      bounding_box_pos_y: 870
       bounding_box_width: 1880
-      text: "text_lines_from_file(1,1,\"title_desc.txt\")"
+      text: "text_lines_from_file(1,2,\"title_desc.txt\")"
       font: ../data/fonts/FiraCode-Medium.ttf
       color: "0xffffffff"
       shadow_color: "0xff444444"
@@ -87,6 +88,7 @@ elements:
 
   - name: Description
     type: text
+    disabled: true
     parameters:
       pos_x: 30
       pos_y: 1010
