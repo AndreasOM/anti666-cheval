@@ -1,3 +1,2 @@
 Cheval
-- [x] file reload
-- [x] multiline text
+- release v0.2
