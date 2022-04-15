@@ -118,6 +118,7 @@ elements:
 
   - name: Timer Background Block
     type: block
+    disabled: true
     parameters:
       pos_x: 1670
       pos_y: 10

@@ -1,2 +1,3 @@
 Cheval
-- release v0.2
+- Hookup Axum
+- Bonus: Crosscompile for RaspberryPi on via github action
