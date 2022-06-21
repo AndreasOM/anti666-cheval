@@ -1,0 +1,3 @@
+rar-rs - Episode 0000
+- What's going on?
+- Setup new project

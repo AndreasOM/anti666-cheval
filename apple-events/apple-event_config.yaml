@@ -151,7 +151,7 @@ elements:
     parameters:
       pos_x: 60
       pos_y: 60
-      width: 960
+      width: 1800
       height: 770
       size: 40
 #      bounding_box_pos_x: 20

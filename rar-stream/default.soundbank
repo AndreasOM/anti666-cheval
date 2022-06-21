@@ -1,0 +1,7 @@
+# id;file;max instances;drop mode;flags (loop);
+TIMER_EXPIRED;timer_expired;2;OLDEST;NONE;
+
+
+# to rebuild run
+# `omt-soundbank build --input default.soundbank --output default.omsb --use-version 3`
+# from the `omt` crate
