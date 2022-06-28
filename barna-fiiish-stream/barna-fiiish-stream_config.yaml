@@ -2,10 +2,12 @@ default_page: 0
 
 variable_defaults:
   title: "Fiiish RS!!!"
-#  title: "Bits'n'Pieces'n'Stuff"
-# title: "Atem & Rust"
-  desc_0: "- Make that binary FAT"
-  desc_1: "- Bonus: Auto trigger on -test tag"
+  #title: "Bits'n'Pieces'n'Stuff"
+        # title: "Atem & Rust"
+  desc_0: "Faster OMT installs"
+  #  desc_0: "- oml-audio: something with audio"
+  # desc_0: "- streamdeck hack merge"
+  # desc_1: "- streamdeck dual view"
   color_0: "#fff6cd26"
   color_1: "#ffac6b26"
   color_2: "#ff563226"
@@ -33,7 +35,7 @@ elements:
       width: 1920
       height: 1080
 #      color: "#ff00bb"
-      color: "#000000"
+      color: "#00000000"
 
 
   - name: Background Block
