@@ -21,7 +21,7 @@ elements:
 
   - name: Fill Block
     type: block
-    disabled: false
+    disabled: true
     parameters:
       pos_x: 0
       pos_y: 0
@@ -157,6 +157,15 @@ elements:
       text: "$timer_text"
       font: ../data/fonts/FiraCode-Medium.ttf
       color: "0xffffffff"
+
+  - name: Bug
+    type: image
+    hidden: false
+    disabled: false
+    parameters:
+      pos_x: 20
+      pos_y: 20
+      filename: ../data/bugs/anti666tv-round-150.png
 
 pages:
   - name: Page 0
