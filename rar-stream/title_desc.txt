@@ -1,4 +1,4 @@
-rar-rs - Episode 0003
-- Blender? For a 2D game?
-- What's next?
+rar-rs - Episode 0004
+- Add a background
+- Manage those entities
 
