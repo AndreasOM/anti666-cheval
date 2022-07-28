@@ -1,4 +1,3 @@
-rar-rs - Episode 0004
-- Add a background
-- Manage those entities
+rar-rs - Episode 0005
+- Better entity configuration
 
