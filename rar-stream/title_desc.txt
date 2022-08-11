@@ -1,4 +1,3 @@
-rar-rs - Episode 0006
-- Episode 0005 catchup
-- Bonus: Camera movement?
+rar-rs - Episode 0007
+- Camera movement?
 
