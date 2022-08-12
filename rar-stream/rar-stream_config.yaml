@@ -207,3 +207,29 @@ pages:
         glow_color: "0xa08080a0"
         glow_size: 2
 
+  - name: Page 2
+    elements:
+    - name: Page 2 Stripe
+      type: block
+      parameters:
+        pos_x: 0
+        pos_y: 390
+        width: 1980
+        height: 300
+        color: 0xff202080
+    - name: Page 2 Text
+      type: text
+      parameters:
+        pos_x: "20+60+50*sin(4*$time)"
+        pos_y: "390-40+50*sin(5*$time)"
+        width: 1980
+        height: 300
+        size: 280
+        bounding_box_pos_x: 20
+        bounding_box_pos_y: 390
+        bounding_box_width: 1980
+        text: "\"Short Break!\""
+        font: ../data/fonts/FiraCode-Medium.ttf
+        color: "0xffffffff"
+        glow_color: "0xa08080a0"
+        glow_size: 2
