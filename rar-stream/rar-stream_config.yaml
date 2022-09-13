@@ -168,7 +168,7 @@ elements:
       filename: ../data/bugs/anti666tv-round-150.png
 
 pages:
-  - name: Page 0
+  - name: "Default"
     elements:
     - name: Page 0 Stripe
       type: block
@@ -180,7 +180,7 @@ pages:
         height: 100
         color: 0xff202080
 
-  - name: Page 1
+  - name: "Soon"
     elements:
     - name: Page 1 Stripe
       type: block
@@ -207,7 +207,7 @@ pages:
         glow_color: "0xa08080a0"
         glow_size: 2
 
-  - name: Page 2
+  - name: "Break"
     elements:
     - name: Page 2 Stripe
       type: block
