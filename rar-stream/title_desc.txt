@@ -1,3 +1,3 @@
-rar-rs - Episode 0012
-- Big catch up
-- Some "menu" work
+rar-rs - Episode 0013
+- Dummy UI
+- Real UI?
