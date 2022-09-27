@@ -1,2 +1,3 @@
-rar-rs - Episode 0015
-- Rectangle collision
+rar-rs - Episode 0016
+- More collisions
+- Maybe some gameplay?
