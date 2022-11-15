@@ -1,3 +1,3 @@
-rar-rs - Episode 0018
+rar-rs - Episode 0019
 - Automatik releases via github
-- Just talking
+- Loading data from packages
