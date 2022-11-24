@@ -1,3 +1,3 @@
-rar-rs - Episode 0020
-- Automatic releases via github
-- Push to itch.io
+rar-rs - Episode 0021
+- Automatic builds & releases
+- What's next?
