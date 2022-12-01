@@ -1,3 +1,2 @@
-rar-rs - Episode 0021
-- Automatic builds & releases
-- What's next?
+rar-rs - Episode 0022
+- Some bits & pieces
