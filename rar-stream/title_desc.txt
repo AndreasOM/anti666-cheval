@@ -1,3 +1,3 @@
-rar-rs - Episode 0025 - xmas special
+rar-rs - Episode 0025
 - Tiles
 - Maps
