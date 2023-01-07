@@ -1,3 +1,3 @@
-rar-rs - Episode 0027
-- xmas break catchup
-- UI tags?
+rar-rs - Episode 0028
+- UI tags
+- Bonus: More UI work
