@@ -1,3 +1,2 @@
-rar-rs - Episode 0028
-- UI tags
-- Bonus: More UI work
+rar-rs - Episode 0029
+- UI configuration
