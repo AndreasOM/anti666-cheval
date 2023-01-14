@@ -1,2 +1,3 @@
-rar-rs - Episode 0029
-- UI configuration
+rar-rs - Episode 0030
+- UI bits & piecer
+- Bonus: Gameplay
